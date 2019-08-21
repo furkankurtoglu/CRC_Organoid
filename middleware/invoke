@@ -1,0 +1,4 @@
+#!/bin/sh
+
+/usr/bin/invoke_app "$@" -C "start_jupyter -A -T @tool CRC_Organoid.ipynb" -t CRC_Organoid \
+                         -u anaconda3-5.1

@@ -1,0 +1,79 @@
+<PhysiCell_settings version="devel-version">
+	<domain>
+		<x_min>-500.0</x_min>
+		<x_max>500.0</x_max>
+		<y_min>-800.0</y_min>
+		<y_max>800.0</y_max>
+		<z_min>-800.0</z_min>
+		<z_max>800.0</z_max>
+		<dx>20.0</dx>
+		<dy>20.0</dy>
+		<dz>20.0</dz>
+		<use_2D>false</use_2D>
+	</domain>
+	
+	<overall>
+		<max_time units="min">4320.0</max_time> 
+		<time_units>min</time_units>
+		<space_units>micron</space_units>
+	</overall>
+	
+	<parallel>
+		<omp_num_threads>12</omp_num_threads>
+	</parallel> 
+	
+	<save>
+		<folder>.</folder>  
+
+		<full_data>
+			<interval units="min">60</interval>
+			<enable>True</enable>
+		</full_data>
+		
+		<SVG>
+			<interval units="min">60</interval>
+			<enable>True</enable>
+		</SVG>
+		
+		<legacy_data>
+			<enable>false</enable>
+		</legacy_data>
+	</save>
+	
+	<user_parameters>
+		<random_seed type="int" units="dimensionless">0</random_seed> 
+		 
+		
+		 
+		<organoid_cell_apoptosis_rate type="double" units="1/min">0.0</organoid_cell_apoptosis_rate> 
+		<organoid_cell_r01 type="double" units="dimensionless">0.005</organoid_cell_r01>
+		<organoid_cell_r10 type="double" units="dimensionless">0.0015</organoid_cell_r10>
+		<organoid_cell_G01S_thr type="double" units="dimensionless">8.5</organoid_cell_G01S_thr>
+		<organoid_cell_relative_adhesion type="double" units="dimensionless">0.05</organoid_cell_relative_adhesion>
+
+		<fibroblast_apoptosis_rate type="double" units="1/min">0.0</fibroblast_apoptosis_rate> 
+		<fibroblast_r01 type="double" units="dimensionless">0.0</fibroblast_r01>
+		<fibroblast_r10 type="double" units="dimensionless">0.0</fibroblast_r10>
+		<fibroblast_relative_adhesion type="double" units="dimensionless">0.05</fibroblast_relative_adhesion>
+		
+		<initial_tumor_radius type="double" units="dimensionless">100.0</initial_tumor_radius>
+		<organoid_distance type="double" units="dimensionless">930.0</organoid_distance>
+		
+		<apoptosis_rate type="double" units="dimensionless">9e+99</apoptosis_rate>
+		
+		<cell_default_inital_energy hidden="false" type="double" units="au">7.01</cell_default_inital_energy>
+		<cell_default_cycle_energy_threshold hidden="false" type="double" units="1/min">10.0</cell_default_cycle_energy_threshold>
+		<cell_default_death_energy_threshold hidden="false" type="double" units="1/min">6.0</cell_default_death_energy_threshold>
+		
+		<k_aerobe hidden="false" type="double" units="1/min">1e-08</k_aerobe>
+		<k_anaerobe hidden="false" type="double" units="1/min">1e-08</k_anaerobe>
+		<k_glut hidden="false" type="double" units="1/min">1e-08</k_glut>
+		<k_usage hidden="false" type="double" units="1/min">0.001</k_usage>
+		<alpha hidden="false" type="double" units="1/min">1.0</alpha>
+		<beta hidden="false" type="double" units="1/min">1.0</beta>
+		<gamma hidden="false" type="double" units="1/min">1.0</gamma>	
+		
+	</user_parameters>
+	
+	
+</PhysiCell_settings>
